@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class DetailActivity : AppCompatActivity() {
+class DetailEnam : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail)
+        setContentView(R.layout.activity_detail_enam)
 
         lateinit var BackButton : Button
         BackButton = findViewById(R.id.backbutton1)

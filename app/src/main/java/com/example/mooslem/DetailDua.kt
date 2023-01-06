@@ -16,6 +16,6 @@ class DetailDua : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
-        supportActionBar?.hide()
+
     }
 }

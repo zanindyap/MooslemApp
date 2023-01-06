@@ -10,10 +10,13 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class TodoAdapter (var ctx: Context, var resource: Int, var item: ArrayList<Model>): ArrayAdapter<Model>(ctx, resource, item) {
+class TodoAdapter (var ctx: Context, var resource: Int, var item: ArrayList<Model>)
+    : ArrayAdapter<Model>(ctx, resource, item) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+
         val layoutInflater = LayoutInflater.from(ctx)
+
         val view = layoutInflater.inflate(resource, null)
 
         val title = view.findViewById<TextView>(R.id.txt_title)

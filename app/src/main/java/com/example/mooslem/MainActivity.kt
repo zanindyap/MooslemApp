@@ -16,9 +16,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, SecondActivity::class.java))
         },3000
         )
-        supportActionBar?.hide()
-
-
         }
 }
 

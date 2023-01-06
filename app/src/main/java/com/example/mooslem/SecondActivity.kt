@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mooslem.api.RetrofitHelper
 import com.example.mooslem.api.TodoApi
 import kotlinx.coroutines.CoroutineScope
@@ -13,7 +14,7 @@ import kotlinx.coroutines.launch
 
 class SecondActivity : AppCompatActivity() {
 
-    lateinit var labelHeader : TextView
+
     lateinit var listTodo : ListView
 
     val apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp1dmZ4b2hwanRkZGJ6anZsb2huIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Njk5OTM5NDYsImV4cCI6MTk4NTU2OTk0Nn0.709e0TYLggcNhaUMp4S6zH9Fzv7EKvUm0bD3lwiIBkE"
@@ -26,11 +27,10 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        labelHeader = findViewById(R.id.label_header)
+
         listTodo = findViewById(R.id.list_todo)
 
-        val result = intent.getStringExtra("result")
-        labelHeader.text = "Assalamualaikum!"
+
 
         CoroutineScope(Dispatchers.Main).launch {
             val response = todoApi.get(token=token, apiKey=apiKey)
@@ -73,18 +73,48 @@ class SecondActivity : AppCompatActivity() {
             if (position == 1) {
                 val intent = Intent(this, DetailDua::class.java)
                 startActivity(intent)
-                supportActionBar?.hide()
+
             }
 
             if (position == 2) {
                 val intent = Intent(this, DetailTiga::class.java)
                 startActivity(intent)
-                supportActionBar?.hide()
+
             }
             if (position == 3) {
                 val intent = Intent(this,DetailEmpat::class.java)
                 startActivity(intent)
-                supportActionBar?.hide()
+
+            }
+            if (position == 4) {
+                val intent = Intent(this,DetailLima::class.java)
+                startActivity(intent)
+
+            }
+            if (position == 5) {
+                val intent = Intent(this,DetailEnam::class.java)
+                startActivity(intent)
+
+            }
+            if (position == 6) {
+                val intent = Intent(this,DetailTujuh::class.java)
+                startActivity(intent)
+
+            }
+            if (position == 7) {
+                val intent = Intent(this,DetailDelapan::class.java)
+                startActivity(intent)
+
+            }
+            if (position == 8) {
+                val intent = Intent(this,DetailSembilan::class.java)
+                startActivity(intent)
+
+            }
+            if (position == 9) {
+                val intent = Intent(this,DetailSepuluh::class.java)
+                startActivity(intent)
+
             }
         }
     }

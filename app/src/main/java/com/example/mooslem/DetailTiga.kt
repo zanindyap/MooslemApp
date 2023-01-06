@@ -16,6 +16,6 @@ class DetailTiga : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
-        supportActionBar?.hide()
+
     }
 }

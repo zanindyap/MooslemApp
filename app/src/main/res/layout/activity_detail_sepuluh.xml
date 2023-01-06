@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,18 +17,36 @@
             android:background="@color/colorAccent"
             android:scaleType="fitXY" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="-50dp"
+            android:layout_marginEnd="-50dp"
+            android:background="@drawable/bg_overlay"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/tdr" />
+            app:srcCompat="@drawable/rzk" />
 
         <Button
             android:id="@+id/backbutton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="BACK" />
-       </FrameLayout>
+
+    </FrameLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -52,7 +70,7 @@
                     android:id="@+id/tvTitleRecipe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Doa Sebelum Tidur"
+                    android:text="Doa Memohon Rezeki"
                     android:textColor="@color/colorAccent"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -68,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="بِسْمِكَ اللّهُمَّ اَحْيَا وَ بِسْمِكَ اَمُوْت"
+                android:text="قَالَ عِيسَى ٱبْنُ مَرْيَمَ ٱللَّهُمَّ رَبَّنَآ أَنزِلْ عَلَيْنَا مَآئِدَةً مِّنَ ٱلسَّمَآءِ تَكُونُ لَنَا عِيدًا لِّأَوَّلِنَا وَءَاخِرِنَا وَءَايَةً مِّنكَ ۖ وَٱرْزُقْنَا وَأَنتَ خَيْرُ ٱلرَّٰزِقِينَ"
                 android:textColor="@color/colorAccent"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -77,10 +95,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Bismika allahumma ahyaa wa bismika amuut(u)
-
-            "
+                android:text="Qāla 'īsabnu maryamallāhumma rabbanā anzil 'alainā mā`idatam minas-samā`i takụnu lanā 'īdal li`awwalinā wa ākhirinā wa āyatam mingka warzuqnā wa anta khairur-rāziqīn"
                 android:textColor="@color/colorAccent"
+
                 android:textSize="16sp"
                 />
             <TextView
@@ -88,9 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text=
-
-                    " Artinya: 'Dengan nama Engkau, ya Allah, aku hidup dan aku mati'
-            "
+                    " Artinya: 'Ya Allah Tuhan kami, turunkanlah kepada kami suatu hidangan dari langit yang pada hari turunnya hidangan itu akan menjadi hari raya bagi kami, bagi orang- orang yang bersama kami dan yang datang sesudah kami, serta menjadi tanda bagi kekuasaan-Mu. Berilah kami rizki, dan Engkaulah Pemberi rizki yang paling utama.'"
                 android:textColor="@color/colorAccent"
                 android:textSize="16sp"
                 android:textStyle="bold" />
